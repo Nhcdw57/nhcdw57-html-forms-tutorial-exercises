@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>4Geeks Academy</title>
+		<style>
+			/* your code here */
+			form table {
+				border-width: 1px 2px 2px 1px;
+				border-style: solid;
+				border-color: grey;
+			}
+			th {
+				border-width: 2px 0px 0px 2px;
+				border-style: solid;
+				border-color: grey;
+				background-color: rgb(192, 175, 253);
+			}
+			td {
+				border-width: 1px 1px 1px 1px;
+				border-style: solid;
+				border-color: grey;
+			}
+			input {
+				border-width: 2px 0px 0px 2px;
+				border-style: solid;
+				border-color: grey;
+			}
+			#submit {
+				display: flex;
+				justify-content: center;
+			}
+		</style>
+	</head>
 
-    <style>
-        /* your code here */
-        
-    </style>
-</head>
-
-<body>
-    <form>
-        <!-- your code here -->
-        
-    </form>
-</body>
-
+	<body>
+		<form>
+			<!-- your code here -->
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="fName" /></td>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" id="sexM" name="sex" value="sexM" /><label for="sexM">Male</label><br />
+						<input type="radio" id="sexF" name="sex" value="sexF" /><label for="sexF">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Eye color</td>
+					<td>
+						<select name="eColor">
+							<option value="brown">brown</option>
+							<option value="blue">blue</option>
+							<option value="green">green</option>
+							<option value="yellow">yellow</option>
+							<option value="grey">grey</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" name="sixFTO" value="sixFTO" /><label for="sixFTO">Over 6 feet tall</label><br />
+						<input type="checkbox" name="twoHLB" value="twoHLB" /><label for="twoHLB">Over 200 pounds</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="desc">Describe your athletic ability:</label><br />
+						<textarea name="desc" cols="40" rows="4"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div id="submit">
+							<input type="submit" value="Enter my information" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
